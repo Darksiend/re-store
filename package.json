@@ -14,6 +14,8 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5"
   },
+  "homepage": "/repo-name",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
