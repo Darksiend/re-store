@@ -9,12 +9,10 @@ const reducer = (state = initialState, action) => {
             return {
                 books: action.payload
             };
+
         default:
             return state;
     }
-
-    return state;
 };
-
 
 export default reducer;
