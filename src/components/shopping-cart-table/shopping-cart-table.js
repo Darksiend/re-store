@@ -1,18 +1,20 @@
 import React from 'react';
-import './shopping-cart-table.css'
+import './shopping-cart-table.css';
 
 const ShoppingCartTable = () => {
     return (
         <div className="shopping-cart-table">
             <h2>Your Order</h2>
             <table className="table">
-                <thread>
+                <thead>
+                <tr>
                     <th>#</th>
                     <th>Item</th>
                     <th>Count</th>
                     <th>Price</th>
                     <th>Action</th>
-                </thread>
+                </tr>
+                </thead>
 
                 <tbody>
                 <tr>
@@ -34,9 +36,10 @@ const ShoppingCartTable = () => {
                 </tr>
                 </tbody>
             </table>
-            <div className="total">$201</div>
 
-
+            <div className="total">
+                Total: $201
+            </div>
         </div>
     );
 };

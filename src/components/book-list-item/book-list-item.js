@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './book-list-item.css'
 
 
@@ -15,7 +15,7 @@ const BookListItem = ({book}) => {
 
             </div>
             <div className="book-details">
-                <a className="book-tittle" href="#">{tittle}</a>
+                <span className="book-tittle" href="#">{tittle}</span>
                 <div className="book-author">{author}</div>
                 <div className="book-price">${price}</div>
                 <button className="btn btn-info add-to-cart">Add to cart</button>
