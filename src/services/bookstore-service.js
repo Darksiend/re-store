@@ -10,18 +10,23 @@ export default class BookstoreService {
         },
         {
             id: 2,
-            tittle: 'Relase Ii!',
+            tittle: 'Relase IT!',
             author: 'Michael T Nygart',
             price: 28,
             coverImage: 'https://images-na.ssl-images-amazon.com/images/I/414CRjLjwgL._SX403_BO1,204,203,200_.jpg'
         }
 
-        ];
+    ];
 
     getBooks() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(this.data)
+
+                if (Math.random() > 0.75) {
+                    reject(new Error('Somthing bad'))
+                } else {
+                    resolve(this.data)
+                }
             }, 700)
         });
     }
